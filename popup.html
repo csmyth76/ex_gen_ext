@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Generate Summary</title>
-    <link rel="stylesheet" type="text/css" href="popup.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f8;
+            display: flex;
+            justify-content: center;
+        }
+        div.container {
+            width: 400px; /* Set your desired width here, up to 800px */
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #summary {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="container"> <!-- Added class="container" for styling -->
         <input type="text" id="concept" placeholder="Concept">
         <input type="text" id="interest" placeholder="Interest">
         <button id="generate">Generate Summary</button>

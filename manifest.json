@@ -1,9 +1,14 @@
 {
     "manifest_version": 3,
-    "name": "OpenAI Summary Generator",
+    "name": "OpenAI Example Generator",
     "version": "1.0",
-    "description": "Generate summaries based on concepts and interests using OpenAI.",
-    "permissions": ["activeTab"],
+    "description": "Generate  examples base on concepts and interests using OpenAI.",
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+      "http://localhost:5000/*"
+    ], 
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
